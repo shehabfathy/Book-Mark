@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   <link rel="icon" href="">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    
+     <section >
+        <div class="container py-5">
+            <div class="text position-relative  py-2">
+               <h1 class="text-center">Bookmarker</h1>
+               <div class="style py-5 mt-5 ">
+
+                <h2 class="text-center mb-5">
+                 <i class="fa-solid fa-bookmark "></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <label class="mb-2  fw-bold" for="SiteName"><i class="fa-solid fa-book"></i>  Site Name</label>
+                <input type="text" oninput="validationname()" class="form-control mb-3 " id="SiteName" placeholder="Bookmark Name">
+                <label class="my-2  fw-bold" for="SiteURL"><i class="fa-solid fa-link-slash"></i>  Site URL</label>
+                <input type="email" oninput="validationurl()" class="form-control" id="SiteURL" placeholder="Website URL">
+                <button onclick="addelement()"    class="  btn mt-4 d-block text-white mx-auto px-5 fw-bold">Submit</button>
+                <!-- <div class="design rounded p-5">
+                    <div class="right">
+
+                    </div>
+                    <p class="fw-bolder fs-6">Site Name or Url is not valid, Please follow the rules below :</p>
+                    <ul class="list-unstyled">
+                        <li> <i class="fa-solid fa-arrow-right me-3"></i>   Site name must contain at least 3 characters</li>
+                        <li ><i class="fa-solid fa-arrow-right me-3"></i> Site URL must be a valid one</li>
+                    </ul>
+               
+                </div> -->
+               </div>
+               <table class="table table-striped mt-4 fw-bold text-center">
+                <thead >
+                    <tr >
+                        <td>Index</td>
+                        <td>Website Name</td>
+                        <td>Visit</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="demo">
+                </tbody>
+
+               </table>
+            </div>
+        </div>
+     </section>
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/main.js"></script>
+</html>
